@@ -1,0 +1,20 @@
+<p>structural-derective works!</p>
+<h2 *ngIf="true">Riyaz Rasiyani using *ngIf="true"</h2>
+<h2 *ngIf="displayName">Riyaz Rasiyani using *ngIf="displayName"</h2>
+<h2 *ngIf="displayName; else elseBlock">Riyaz Rasiyani using *ngIf="displayName; else elseBlock"</h2>
+
+<div *ngIf="displayName; then thenBlock; else elseBlock2"></div>
+
+<ng-template #thenBlock>
+  <h2>Then Riyaz</h2>
+</ng-template>
+
+<ng-template #elseBlock2>
+  <h2>Else Riyaz</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>
+    Name is hidden
+  </h2>
+</ng-template>

@@ -1,0 +1,9 @@
+<p>binding-classes works!</p>
+<h2 class="text-danger">Test direct  withoutClass Binding</h2>
+<h2 [class]="successClass">Test Class Binding</h2>
+<h2 [class.text-danger]="hasError">Test hasError Class Binding</h2>
+<h2 [ngClass]="messageClasses">Test ngClass Binding</h2>
+<h2 [style.color]="'orange'">Test direct Style Binding</h2>
+<h2 [style.color]="hasError? 'red': 'green'">Test ternery Style Binding</h2>
+<h2 [style.color]="highlightedColor">Test Style Binding</h2>
+<h2 [ngStyle]="multipleStyles">Test ngStyle Binding</h2>
